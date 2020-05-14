@@ -162,7 +162,7 @@ class Alert {
                   color: Colors.transparent,
                   child: InkWell(
                     onTap: () {
-                      Navigator.pop(context, rootNavigator: true);
+                      Navigator.of(context, rootNavigator: true).pop();
                       closeFunction();
                     },
                   ),
